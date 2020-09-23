@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*
+ Ajatix Maps & Directions
+ Copyright (C) 2011-2016 Ajatix. All rights reserved.
+ http://www.ajatix.com
+ Unregistered copy.
+ Any usage except for the purpose of evaluation is strictly prohibited.
+*/
+#AJXMAPQANLQTB,#AJXMAPQANLQTB * {box-sizing:border-box;}
+#AJXMAPQANLQTB img {max-width:none;}
+#AJXMAPQANLQTB {position:relative;width:372px;border:solid #000000 1px;}
+#AJXMAPQANLQTBmap {position:relative;height:400px;width:370px;}

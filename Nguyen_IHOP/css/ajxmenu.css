@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*
+ Ajatix Advanced CSS Drop Down Menu
+ Copyright (C) 2009-2016 Ajatix. All rights reserved.
+ http://www.ajatix.com
+*/
+.AJXCSSMenuAWLTIcC,.AJXCSSMenuAWLTIcC_n,.AJXCSSMenuAWLTIcC *,.AJXCSSMenuAWLTIcC_n * {box-sizing:border-box;}
+.AJXCSSMenuAWLTIcC {position:relative;z-index:100;width:100%;line-height:0;background:#000000;text-align:center;}
+.AJXCSSMenuAWLTIcC ul {position:relative;display:inline-block;margin:0;padding:0px 0px 0px 0px;list-style-type:none;}
+*+html .AJXCSSMenuAWLTIcC ul {display:inline;}
+.AJXCSSMenuAWLTIcC li {float:left;margin:0;}
+.AJXCSSMenuAWLTIcC li:hover,.AJXCSSMenuAWLTIcC li.ajxover {position:relative;}
+.AJXCSSMenuAWLTIcC a,.AJXCSSMenuAWLTIcC_n a {display:block;overflow:hidden;}
+.AJXCSSMenuAWLTIcC>ul>li>a {height:34px;white-space:nowrap;padding:0 12px 0 12px;font:18px Arial,Helvetica,sans-serif;line-height:32px;text-decoration:none;text-transform:none;text-align:center;border:1px solid #000000;color:#ffffff;background:none;}
+.AJXCSSMenuAWLTIcC>ul>li:hover>a,.AJXCSSMenuAWLTIcC>ul>li.ajxover>a {text-decoration:underline;border-color:#ffffff;color:#b7d1df;background:#000000;}
+.AJXCSSMenuAWLTIcC>ul>li>a.ajxsub {padding:0 22px 0 12px;background:url(ajxmenu_files/top-sub.gif) top right;}
+.AJXCSSMenuAWLTIcC>ul>li:hover>a.ajxsub,.AJXCSSMenuAWLTIcC>ul>li.ajxover>a.ajxsub {position: relative;z-index:101;background:#000000 url(ajxmenu_files/top-sub.gif) bottom right;}
+.AJXCSSMenuAWLTIcC li ul {position:absolute;left:-9999px;top:-9999px;width:142px;height:auto;display:inline-block;vertical-align:top;font-size:0;float:none;padding:6px 0px 6px 0px;border:1px solid #404040;border-radius:0 8px 8px 8px;background:#0c0c0c;box-shadow:3px 3px 10px rgba(0,0,0,.5);}
+.AJXCSSMenuAWLTIcC li:hover > ul,.AJXCSSMenuAWLTIcC li.ajxover > ul {left:0px;top:33px;}
+.AJXCSSMenuAWLTIcC li li {width:140px;margin:0;}
+.AJXCSSMenuAWLTIcC li li a {height:auto;white-space:normal;padding:6px 11px 7px 11px;font:12px Arial,Helvetica,sans-serif;line-height:12px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#ffffff;background:none;}
+.AJXCSSMenuAWLTIcC li li:hover>a,.AJXCSSMenuAWLTIcC li li.ajxover>a {color:#000000;background:#b6b6b6 url(ajxmenu_files/sub-mo.gif) top right;}
+@media screen and (max-width:575px) {
+.AJXCSSMenuAWLTIcC:after,.AJXCSSMenuAWLTIcC_n:after {content:'narrow';display:none;}
+.AJXCSSMenuAWLTIcC_n {position:relative;width:100%;z-index:100;padding-top:34px;background:#000000;cursor:pointer;}
+.AJXCSSMenuAWLTIcC_n:before {position:absolute;top:0;right:10px;content:"\2261";font:bold 34px Arial,Helvetica,sans-serif;line-height:34px;color:#ffffff;z-index:1;}
+.AJXCSSMenuAWLTIcC_n ul {margin:0;list-style-type:none;background:#0c0c0c;border-radius:0 0 8px 8px;}
+.AJXCSSMenuAWLTIcC_n>ul {height:0;overflow:hidden;}
+.AJXCSSMenuAWLTIcC_n>ul.ajxover,.AJXCSSMenuAWLTIcC_n li ul{height:auto;padding:4px 2px 4px 2px;border:1px solid #c1c1c2;cursor:default;}
+.AJXCSSMenuAWLTIcC_n li {float:none;margin:0;display:none;}
+.AJXCSSMenuAWLTIcC_n .ajxover li {display:block;}
+.AJXCSSMenuAWLTIcC_n li a {height:auto;white-space:normal;padding:6px 11px 7px 11px;font:12px Arial,Helvetica,sans-serif;line-height:12px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#ffffff;background:none;}
+.AJXCSSMenuAWLTIcC_n li:hover>a,.AJXCSSMenuAWLTIcC_n li.ajxover>a {color:#000000;background:#b6b6b6 url(ajxmenu_files/sub-mo.gif) top right;}
+.AJXCSSMenuAWLTIcC_n li a.ajxsub {padding:6px 11px 7px 11px;background:none;}
+.AJXCSSMenuAWLTIcC_n li:hover>a.ajxsub,.AJXCSSMenuAWLTIcC_n li.ajxover>a.ajxsub {position: static;background:#b6b6b6 url(ajxmenu_files/sub-mo.gif) top right;}
+}
