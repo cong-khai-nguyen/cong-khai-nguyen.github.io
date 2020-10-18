@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>IHOP Menu</title>
+	<title>IHOP Restaurant</title>
 	<link rel = "icon" href =  
 "Images/size-ihop_logo_detail_colorcorrected.jpg"
         type = "image/x-icon"> 
@@ -39,7 +39,7 @@
   <body>
 	  <header>
 	    <div class="row">
-			<div class="col-xl-12"><a href="#" style="color: #0085c8">ESPANOL</a></div>
+			<div class="col-xl-12"><a href="menu2.html" style="color: #0085c8">ESPAÑOL</a></div>
         </div>
       </header>
 	  <hr align="center">
@@ -82,7 +82,7 @@
 	  </div>
 <div class="row">
 	<div class="col-xl-2 "></div>
-		 <div class="col-xl-4 divscrollstyle d-none d-xl-block">
+		<div id = "scroll" class="col-xl-4 divscrollstyle d-none d-xl-block">
 	       <h5><a href="#LimitedTimeOffered" style="color: #000000">Limited Time Offer</a></h5>
 			 <h5><a href="#Pancakes" style="color: #000000">Pancakes</a></h5>
 			 <h5><a href="#Appetizers" style="color: #000000">Appetizers</a></h5>
@@ -102,10 +102,80 @@
 			 <h5>Desserts </h5>
 			 <h5>Children of Fallen Patriots Donation </h5>
     </div>
+	<div id = "scroll2" class="col-xl-4 divscrollstyle2 d-none d-xl-block">
+	       <h5><a href="#LimitedTimeOffered" style="color: #000000">Limited Time Offer</a></h5>
+			 <h5><a href="#Pancakes" style="color: #000000">Pancakes</a></h5>
+			 <h5><a href="#Appetizers" style="color: #000000">Appetizers</a></h5>
+			 <h5><a href="#Beverages" style="color: #000000">Beverages</a></h5>
+			 <h5>IHOP Creations</h5>
+			 <h5>Waffles</h5>
+			 <h5>French Toast </h5>
+			 <h5>Crepes </h5>
+			 <h5>Combos </h5>
+			 <h5>Omelettes </h5>
+			 <h5>Ultimate Steakburgers</h5>
+			 <h5>Sandwiches </h5>
+			 <h5>Salads</h5>
+			 <h5>Entrees </h5>
+			 <h5>Sides</h5>
+			 <h5>Kids </h5>
+			 <h5>Desserts </h5>
+			 <h5>Children of Fallen Patriots Donation </h5>
+    </div>
+	
+	
+	<script>
+
+document.addEventListener('DOMContentLoaded', (event) => {
+	console.log(screen.width);
+	
+	document.getElementById("scroll2").style.visibility= "hidden";
+	
+	window.addEventListener('scroll',(event) =>{
+
+const element = document.getElementById("scroll");
+const y3 = document.getElementById("bot").getBoundingClientRect().top;
+console.log(window.pageYOffset);
+
+ document.getElementById("scroll2").style.visibility= "hidden";
+		document.getElementById("scroll").style.visibility= "hidden";
+  if (window.pageYOffset <= 2||window.scrollY == 0)
+  	{
+		document.getElementById("scroll").style.visibility= "visible";
+  	}
+  else if (window.pageYOffset > 2 && window.pageYOffset <= 50 ) {
+	    var x = document.getElementById("scroll");
+  		if (x.style.visibility = "hidden") {
+			x.visibility = "visible";}
+		else
+			x.visibility = "hidden";
+			
+  }
+  else if (window.pageYOffset < 357)
+  {
+	 document.getElementById("scroll2").style.visibility = "hidden";
+  }
+
+  else if (window.pageYOffset >= 357)
+	{
+		var element2 = document.getElementById("scroll2");
+		element2.style.visibility = "visible"; 
+	}
+	
+  
+
+	});
+	
+	
+	
+})
+
+</script>
+	
 	<a name="LimitedTimeOffered"></a>
-	  <div class="col-xl-10"><h2 class="top">Limited Time Offered</h2>
+	  <div class="col-xl-10" id = "bot"><h2 class="top">Limited Time Offered</h2>
 <div class="row ">
-        <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="col-xl-4 col-lg-6 col-md-6 center">
 	        <img src="Images/l1.jpg" class="img-fluid" alt="Classic BreakFEAST Sampler">
 	        <h5 class="text-center"><a href="#" style="color: #000000">Classic BreakFEAST<br>
 	          Sampler</a></h5>
@@ -119,7 +189,7 @@
 	          </div>
             </div>
 	      </div>
-	      <div class="col-xl-4 col-lg-6 col-md-6">
+	      <div class="col-xl-4 col-lg-6 col-md-6 center">
 	        <img src="Images/l2.jpg" class="img-fluid" alt="Have it All BreakFEAST"><h5 class="text-center"><a href="#" style="color: #000000">Have it All BreakFEAST</a></h5>
 			  <br>
 		    <div class="row col">
@@ -131,7 +201,7 @@
 			    </div>
 		    </div>
           </div>
-	      <div class="col-xl-4 col-lg-6 d-xl-block col-md-6 d-md-none">
+	      <div class="col-xl-4 col-lg-6 d-xl-block col-md-6 d-md-none center">
 	        <img src="Images/l3.jpg" class="img-fluid" alt="Big Farmhouse BreakFEAST"><h5 class="text-center"><a href="#" style="color: #000000">Big Farmhouse<br> BreakFEAST</a></h5>
 			  <div class="row col">
 			    <div class="col-xl-6 line">
@@ -144,7 +214,7 @@
 	      </div>
         </div>
 	    <div class="row">
-		    <div class="col-xl-4 col-lg-6 col-md-6">
+		    <div class="col-xl-4 col-lg-6 col-md-6 center">
 		      <img src="Images/l4.jpg" class="img-fluid" alt="International Pancake Combo"><h5 class="text-center" style="color: #000000"><a href="#" style="color: #000000">International Pancake <br>Combo</a></h5>
 				<div class="row col">
 	          <div class="col-xl-6 line">
@@ -155,7 +225,7 @@
 	          </div>
             </div>
 		    </div>
-		    <div class="col-xl-4 col-lg-6 col-md-6">
+		    <div class="col-xl-4 col-lg-6 col-md-6 center">
 		      <img src="Images/l5.jpg" class="img-fluid" alt="Mexican Churro Pancakes"><h5 class="text-center"><a href="#"  style="color: #000000">Mexican Churro Pancakes</a></h5><br>
 				<div class="row col">
 	          <div class="col-xl-6 line">
@@ -180,7 +250,7 @@
 		    </div>
 	    </div>
 		  <div class="row">
-		    <div class="col-xl-4 col-lg-6 col-md-6">
+		    <div class="col-xl-4 col-lg-6 col-md-6 center">
 		      <img src="Images/l7.jpg" class="img-fluid" alt="Italian Cannoli Pancakes"><h5 class="text-center" style="color: #000000"><a href="#" style="color: #000000">Italian Cannoli Pancakes</a></h5><br>
 				<div class="row col">
 	          <div class="col-xl-6 line">
@@ -192,7 +262,7 @@
 	          </div>
             </div>
 		    </div>
-		    <div class="col-xl-4 col-lg-6 col-md-6">
+		    <div class="col-xl-4 col-lg-6 col-md-6 center">
 		      <img src="Images/l8.jpg" class="img-fluid" alt="Mexican Tres Leches Pancakes Side Order"><h5 class="text-center"><a href="#"  style="color: #000000">Mexican Tres Leches<br> Pancakes Side Order</a></h5>
 				<div class="row col">
 	          <div class="col-xl-6 line">
@@ -203,7 +273,7 @@
 	          </div>
             </div>
 		    </div>
-		    <div class="col-xl-4 col-lg-6 col-md-6 d-md-none d-lg-block">
+		    <div class="col-xl-4 col-lg-6 col-md-6 d-md-none d-lg-block center">
 		      <img src="Images/l9.jpg" class="img-fluid" alt="Mexican Tres Leches Pancakes">
 		      <h5 class="text-center"><a href="#"  style="color: #000000">Mexican Tres Leches Pancakes</a></h5><br>
 				<div class="row col">
@@ -220,7 +290,7 @@
 
   <h2 class="top">Pancakes</h2>
   <div class="row image">
-    <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/p1.jpg" class="img-fluid" alt="Build Your Pancake Combo">
+    <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/p1.jpg" class="img-fluid" alt="Build Your Pancake Combo">
       <h5 class="text-center"><a href="#" style="color: #000000">Build Your Pancake Combo </a></h5>
       <br>
       <div class="row col">
@@ -232,7 +302,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/p2.jpg" class="img-fluid" alt="Original Full Stack Buttermilk Pancakes">
+    <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/p2.jpg" class="img-fluid" alt="Original Full Stack Buttermilk Pancakes">
       <h5 class="text-center"><a href="#" style="color: #000000">Original Full Stack<br>
         Buttermilk Pancakes </a></h5>
       <div class="row col">
@@ -244,7 +314,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-6 d-xl-block col-md-6 d-md-none"> <img src="Images/p3.jpg" class="img-fluid" alt="Original Short Stack Buttermilk Pancakes
+    <div class="col-xl-4 col-lg-6 d-xl-block col-md-6 d-md-none center"> <img src="Images/p3.jpg" class="img-fluid" alt="Original Short Stack Buttermilk Pancakes
 ">
       <h5 class="text-center"><a href="#" style="color: #000000">Original Short Stack<br>
         Buttermilk Pancakes </a></h5>
@@ -259,7 +329,7 @@
     </div>
   </div>	
 		  <div class="row">
-    <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/p7.jpg" class="img-fluid" alt="Double Blueberry Pancakes">
+    <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/p7.jpg" class="img-fluid" alt="Double Blueberry Pancakes">
       <h5 class="text-center" style="color: #000000"><a href="#" style="color: #000000">Double Blueberry Pancakes </a></h5>
       
       <div class="row col">
@@ -271,7 +341,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/p8.jpg" class="img-fluid" alt="Chocolate Chocolate Chip Pancakes">
+    <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/p8.jpg" class="img-fluid" alt="Chocolate Chocolate Chip Pancakes">
       <h5 class="text-center"><a href="#"  style="color: #000000">Chocolate Chocolate Chip Pancakes </a></h5>
       <div class="row col">
         <div class="col-xl-6 line">
@@ -282,7 +352,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-6 d-lg-none d-xl-block col-md-6"> <img src="Images/p9.jpg" class="img-fluid" alt="Mexican Churro Pancakes">
+    <div class="col-xl-4 col-lg-6 d-lg-none d-xl-block col-md-6 center"> <img src="Images/p9.jpg" class="img-fluid" alt="Mexican Churro Pancakes">
       <h5 class="text-center"><a href="#"  style="color: #000000">Mexican Churro Pancakes </a></h5>
       
       <div class="row col">
@@ -299,7 +369,7 @@
     
 	    <h2 class="top">Appetizers</h2>
 	    <div class="row image">
-	      <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/a1.jpg" class="img-fluid" alt="Crispy Chicken Strips &amp; Fries">
+	      <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/a1.jpg" class="img-fluid" alt="Crispy Chicken Strips &amp; Fries">
 	        <h5 class="text-center"><a href="#" style="color: #000000">Crispy Chicken Strips &<br> 
 	          Fries
 
@@ -313,7 +383,7 @@
               </div>
             </div>
           </div>
-	      <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/a2.jpg" class="img-fluid" alt="Appetizer Sampler">
+	      <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/a2.jpg" class="img-fluid" alt="Appetizer Sampler">
 	        <h5 class="text-center"><a href="#" style="color: #000000">Appetizer Sampler
 
 </a></h5><br>
@@ -327,7 +397,7 @@
               </div>
             </div>
           </div>
-	      <div class="col-xl-4 col-lg-6 col-md-6 d-md-none d-lg-block"> <img src="Images/a3.jpg" class="img-fluid" alt="Chicken &amp; Three-Cheese Quesadilla">
+	      <div class="col-xl-4 col-lg-6 col-md-6 d-md-none d-lg-block center"> <img src="Images/a3.jpg" class="img-fluid" alt="Chicken &amp; Three-Cheese Quesadilla">
 	        <h5 class="text-center"><a href="#" style="color: #000000">Chicken & Three-Cheese Quesadilla
             </a></h5><br>
 	        <div class="row col">
@@ -341,7 +411,7 @@
           </div>
         </div>
 		   <div class="row">
-	      <div class="col-xl-4 d-lg-none d-xl-block col-md-6"> <img src="Images/a4.jpg" class="img-fluid" alt="Mexican Tres Leches Pancakes">
+	      <div class="col-xl-4 d-lg-none d-xl-block col-md-6 center"> <img src="Images/a4.jpg" class="img-fluid" alt="Mexican Tres Leches Pancakes">
 	        <h5 class="text-center" style="color: #000000"><a href="#" style="color: #000000">Mozza Sticks
 	          </a></h5>
 	        <div class="row col">
@@ -357,22 +427,22 @@
 		  <a name="Beverages"></a>
 	    <h2 class="top">Beverages</h2>
 	    <div class="row image">
-	      <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/b1.jpg" class="img-fluid" alt="Coffee and Hot Chocolate">
+	      <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/b1.jpg" class="img-fluid" alt="Coffee and Hot Chocolate">
 	        <h5 class="text-center"><a href="#" style="color: #000000">Coffee and Hot Chocolate
             </a></h5> <br>
 </div>
-	      <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/b2.jpg" class="img-fluid" alt="Fruit Juices">
+	      <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/b2.jpg" class="img-fluid" alt="Fruit Juices">
 	        <h5 class="text-center"><a href="#" style="color: #000000">Fruit Juices
 </a></h5><br>
 </div>
-	      <div class="col-xl-4 col-lg-6 d-xl-block d-md-none"> <img src="Images/b3.jpg" class="img-fluid" alt="IHOP Splashers®">
+	      <div class="col-xl-4 col-lg-6 d-xl-block d-md-none center"> <img src="Images/b3.jpg" class="img-fluid" alt="IHOP Splashers®">
 	        <h5 class="text-center"><a href="#" style="color: #000000">IHOP Splashers®
             </a></h5><br>
 </div>
         </div>
 		  
       <div class="row">
-	      <div class="col-xl-4 col-lg-6 col-md-6"> <img src="Images/b4.jpg" class="img-fluid" alt="House-Made Milkshakes">
+	      <div class="col-xl-4 col-lg-6 col-md-6 center"> <img src="Images/b4.jpg" class="img-fluid" alt="House-Made Milkshakes">
 	        <h5 class="text-center" style="color: #000000"><a href="#" style="color: #000000">House-Made Milkshakes
 
 				</a></h5>	        
@@ -384,11 +454,22 @@
           </div>
 
  
-		  
+	  <div class="row d-lg-block d-none">
+			
+		    <div class="footer2 d-lg-none d-xl-block">
+		      <p class="text-right"><a href="https://www.choosemyplate.gov/" target="_blank">CHOOSEMYPLATE.ORG</a><br>
+		        <a href="https://www.healthydiningfinder.com/" target="_blank"> HEALTHYDININGFINDER.COM</a><br>
+		        	        
+BECOME A FRANCHISEE<br>
+		        © 2020 IHOP 
+		        RESTAURANTS LLC</p>
+	      </div>
+	    </div>
+	  
 		  
 	    <div class="row">
 			<div class="col-xl-2"></div>
-		    <div class="col-xl-10 footer">
+		    <div class="col-xl-10 footer d-xl-none">
 		      <p class="text-right"><a href="https://www.choosemyplate.gov/" target="_blank">CHOOSEMYPLATE.ORG</a><br>
 		        <a href="https://www.healthydiningfinder.com/" target="_blank"> HEALTHYDININGFINDER.COM</a><br>
 		        BECOME A FRANCHISEE<br>
