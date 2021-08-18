@@ -31,11 +31,9 @@ h1{
 	color: #FFFFFF;
 }
 .footer2 {
-	float:right;
-	margin-left:254px;
 	background-color: #000000;
 	color: #FFFFFF;
-	width:1115px;
+	
 }
 .dropdown-item{
 	border-radius: 1px;	
@@ -78,7 +76,7 @@ h2{
 	margin-top: 5px;
 }
 .divscrollstyle2{
-	width: 235px;
+	width: 237px;
 	height: 400px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
